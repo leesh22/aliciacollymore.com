@@ -6,15 +6,11 @@
 
 exports.onCreatePage = async ({ page, boundActionCreators }) => {
     const { createPage } = boundActionCreators;
-  
     return new Promise((resolve, reject) => {
       if (page.path.match(/^\/case-studies/)) {
         page.layout = "caseStudies";
-  
-        // Update the page.
         createPage(page);
       }
-  
       resolve();
     });
   };
