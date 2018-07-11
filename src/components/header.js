@@ -72,11 +72,11 @@ const Header = ({ title, bgColor, subTitle}) => (
   <Wrapper>
   <HeaderWrapper style={{background: bgColor, backgroundSize: 'cover'}}>
       <IconWrapper>
-        <Mailto email="hello@aliciacollymore.com" obfuscate={false}><FaEnvelope /></Mailto>
-        <Link to='//linkedin.com/in/alicia-collymore-743b0662/' target='_blank'><FaLinkedinSquare /></Link>
-        <Link to='//github.com/leesh22' target='_blank'><FaGithubSquare /></Link>
-        <Link to='//twitter.com/AliciaCollymore' target='_blank'><FaTwitterSquare /></Link>
-        <Link to='//wakatime.com/@alicia' target='_blank'><FaClockO /></Link>
+        <a href='mailto:hello@aliciacollymore.com' target='_blank'><FaEnvelope /></a>
+        <a href='http://linkedin.com/in/alicia-collymore-743b0662/'target='_blank'><FaLinkedinSquare /></a>
+        <a href='http://github.com/leesh22/'target='_blank'><FaGithubSquare /></a>
+        <a href='http://twitter.com/AliciaCollymore'target='_blank'><FaTwitterSquare /></a>
+        <a href='http://wakatime.com/@alicia'target='_blank'><FaClockO /></a>
       </IconWrapper>  
       <HeaderTitle>
         <StyledLink to="/">{title}</StyledLink>
