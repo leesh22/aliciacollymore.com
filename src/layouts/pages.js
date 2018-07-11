@@ -8,7 +8,7 @@ const Pages = ({ children, data }) => {
 return (
   <div>
       <h1>new layout</h1>
-    {children()}
+     {children()}
   </div>
 )}
 

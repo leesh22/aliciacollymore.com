@@ -9,6 +9,10 @@ const GridWrapper = styled.div `
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(100px, auto);
+
+  @media only screen and (max-width: 812px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `
 
 const gridContent = {
@@ -26,7 +30,7 @@ const IndexPage = () => (
   <GridWrapper>
     <HomeGridItem title='Skills' pageLink='' bg='#18435A' content={gridContent.skils} height='350px' padding='80px 50px'></HomeGridItem>
     <HomeGridItem title='About Me' pageLink='/about' bg='url("/imgs/alicia-dark.png")' content={gridContent.about} height='350px' padding='80px 50px'></HomeGridItem>
-    <HomeGridItem title='Case Studies' pageLink='/caseStudies' bg='#C1C1C1' content={gridContent.case}></HomeGridItem>
+    <HomeGridItem title='Case Studies' pageLink='/case-studies' bg='#C1C1C1' content={gridContent.case}></HomeGridItem>
     <HomeGridItem title='Experience' pageLink='/experience' bg='#F18F01' content={gridContent.experience}></HomeGridItem>
   </GridWrapper>
   </div>

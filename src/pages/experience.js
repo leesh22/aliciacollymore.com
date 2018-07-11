@@ -4,11 +4,8 @@ import styled from "styled-components";
 
 import Header from '../components/header';
 import Footer from '../components/footer';
+import ContentWrapper from '../components/contentWrapper';
 
-
-const ContentWrapper = styled.div `
-  padding: 10% 10% 5% 10%;
-`
 
 const ItemWrapper =  styled.div`
   margin-bottom: 100px;
@@ -52,7 +49,7 @@ const experiencePage = () => (
                 <li>- Built and deployed multiple API’s connecting to AWS services such as Dynamodb and PostgreSQL</li>
                 <li>- Worked side by side with Android developers to port UI to Android TV devices</li>
               </ul>
-              <StyledLink to='/caseStudies'>Have a look at some projects I carried out at YouView</StyledLink>
+              <StyledLink to='/case-studies'>Have a look at some projects I carried out at YouView</StyledLink>
         </ItemWrapper>
 
         <ItemWrapper>
@@ -66,7 +63,7 @@ const experiencePage = () => (
                 <li>- Agile project management</li>
                 <li>- Internal and external team management</li>
               </ul>
-              <StyledLink to='/caseStudies/SoleTraderCaseStudy'>Check out a major project I worked on while at SoleTrader.com</StyledLink>
+              <StyledLink to='/case-studies/my-soletrader'>Check out a major project I worked on while at SoleTrader.com</StyledLink>
         </ItemWrapper>
     </ContentWrapper>
     <Footer/>

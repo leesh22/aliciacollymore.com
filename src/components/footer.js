@@ -7,6 +7,10 @@ const Navigation = styled.nav `
     grid-template-columns: repeat(4,1fr);
     text-align: center;
     background: teal;
+
+    @media only screen and (max-width: 568px) {
+        grid-template-columns: repeat(2,1fr);
+      }
 `
 
 const StyledLink = styled(Link) `
@@ -20,7 +24,7 @@ const Footer = () => (
     <Navigation>
         <StyledLink to='/'>hq</StyledLink>
         <StyledLink to='/about' style={{background: '#18435A'}}>a bit about me</StyledLink>
-        <StyledLink to='/caseStudies' style={{background: '#C1C1C1'}}>some projects</StyledLink>
+        <StyledLink to='/case-studies' style={{background: '#C1C1C1'}}>some projects</StyledLink>
         <StyledLink to='/experience' style={{background: '#F18F01'}}>my experience</StyledLink>
     </Navigation>
 

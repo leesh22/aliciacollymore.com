@@ -28,6 +28,7 @@ const HeaderWrapper = styled.div `
 const HeaderTitle = styled.h1 `
   font-size: 3em;
   margin-bottom: 0px;
+  text-align: center;
 `
 const StyledLink = styled(Link) `
   color: #fff;
@@ -40,6 +41,7 @@ const HeaderSubTitle = styled.div `
   text-transform: uppercase;
   letter-spacing: 7px;
   margin-top: 10px;
+  text-align: center;
 `
 const HeaderCurve = styled.div `
   background: teal;
