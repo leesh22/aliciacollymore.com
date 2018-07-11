@@ -59,18 +59,20 @@ const BenchmarkCaseStudy = () => (
 
       <Item>
         <h3>What was the problem</h3>
-        <p>Benchmark scaffolding are one of the largest scaffolding companies in the UK carrying out major work on Westminster, Westfield and the Olympic village. Unfortunately there website did not reflect there status, working closely with WTEA we aimed to rectify this.</p>
+        <p>Benchmark scaffolding are one of the largest scaffolding companies in the UK and have carried out major work on Westminster, Westfield and the Olympic village. Unfortunately there website did not reflect there status, working closely with WTEA we aimed to rectify this.</p>
       </Item>
     </CaseWrapper>
 
      <CaseWrapper>
       <Item>
         <h3>What was the solution</h3>
-        <p>Benchmark wanted an easy to use site which reflected their abilities effectively. Working closely with the WTEA team  we designed a high end website with a simple WordPress backend which was striped and customised to allow for very easy editing and blog posting.</p>
+        <p>Working closely with the WTEA team we designed a high end website with a simple WordPress backend which was striped and customised to allow for very easy editing and blog posting.</p>
+        <p>I decided to use Wordpress for the CMS as I knew I could easily manipulate the user facing side to be extremely easy use. Using PHP I added custom pages and fields to allow for simple and easy editing. </p>
+        <p>I used a mixture of CSS and Javascript to add in some simple scroll animations and using slick.js I incorporated a number of slideshows which I made editable via the user interface using PHP.</p>
       </Item>
 
       <Item>
-        <StyledImg src='/imgs/case-studies/bm/bm2.png'/>
+        <StyledImg style={{marginLeft: '100px'}} src='/imgs/case-studies/bm/bm-cms.png'/>
       </Item>
 
     </CaseWrapper>
@@ -82,7 +84,7 @@ const BenchmarkCaseStudy = () => (
 
       <Item>
         <h3>What was the outcome</h3>
-        <p>Benchmark are extremely happy with their new site and regularly create blog posts of what there are up to, the site now reflects the standards of the company effectively.</p>
+        <p>Benchmark are extremely happy with their new site and feels it reflects the standards of the company effectively. The site is due to be published this quarter once copy has been finalised. </p>
       </Item>
     </CaseWrapper>
 

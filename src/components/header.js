@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components';
-
+import {FaLinkedinSquare, FaTwitterSquare, FaClockO, FaGithubSquare, FaEnvelope} from 'react-icons/lib/fa';
+import Mailto from 'react-mailto';
 
 const Wrapper = styled.div `
   height: 400px;
@@ -48,12 +49,33 @@ const HeaderCurve = styled.div `
   bottom: -28px;
   z-index: 1;
   border-radius: 100%;
-  
-
 `
+const IconWrapper = styled.div `
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.5em;
+  opacity: .7;
+
+  & a {
+    color: #ffffff;
+  }
+  
+  & svg {
+    margin: 10px;
+  }
+`
+
 const Header = ({ title, bgColor, subTitle}) => (
   <Wrapper>
   <HeaderWrapper style={{background: bgColor, backgroundSize: 'cover'}}>
+      <IconWrapper>
+        <Mailto email="hello@aliciacollymore.com" obfuscate={false}><FaEnvelope /></Mailto>
+        <Link to='//linkedin.com/in/alicia-collymore-743b0662/' target='_blank'><FaLinkedinSquare /></Link>
+        <Link to='//github.com/leesh22' target='_blank'><FaGithubSquare /></Link>
+        <Link to='//twitter.com/AliciaCollymore' target='_blank'><FaTwitterSquare /></Link>
+        <Link to='//wakatime.com/@alicia' target='_blank'><FaClockO /></Link>
+      </IconWrapper>  
       <HeaderTitle>
         <StyledLink to="/">{title}</StyledLink>
       </HeaderTitle>

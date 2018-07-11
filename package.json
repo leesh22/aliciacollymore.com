@@ -6,9 +6,12 @@
   "dependencies": {
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
+    "gatsby-plugin-google-analytics": "^1.0.31",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-plugin-styled-components": "^2.0.11",
     "react-helmet": "^5.2.0",
+    "react-icons": "^2.2.7",
+    "react-mailto": "^0.4.0",
     "styled-components": "^3.3.3"
   },
   "keywords": [

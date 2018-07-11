@@ -5,6 +5,13 @@ module.exports = {
   pathPrefix: "/aliciacollymore.com",
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-styled-components'
+    'gatsby-plugin-styled-components',
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-122006925-1',
+        head: false
+      },
+    },
   ],
 }

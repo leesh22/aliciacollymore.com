@@ -34,6 +34,7 @@ const StaticGridContent = styled.div`
   position: absolute;
   width: 80%;
   top: 130px;
+  line-height: 30px;
 `
 
 const StaticGridTitle = styled.h3 `

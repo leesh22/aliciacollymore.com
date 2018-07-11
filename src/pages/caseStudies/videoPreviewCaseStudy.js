@@ -48,14 +48,15 @@ const VideoPreviewCaseStudy = () => (
     <BackLink to='/caseStudies'><img src='/imgs/back-arrow.png'/></BackLink>
     <h4>Case Study</h4>
     <h1>YouView Video Previews</h1>
-    <p>Typescript, RxJs, DynamoDb, AWS, Node.js, Javascript, gulp.js, SASS</p>
+    <p>Typescript, RxJs, DynamoDb, AWS, Node.js, HLS.js, Javascript, gulp.js, PostCSS</p>
     <CaseWrapper>
       <Item>
-        <StyledImg src='/imgs/case-studies/vp/vp.png'/>
+        <StyledImg src='/imgs/case-studies/vp/vp-discover.png'/>
       </Item>
 
       <Item>
         <h3>What was the problem</h3>
+        <p>One of YouViews goals is to drive users to content whilst also providing a great TV experience for the user.</p>
         <p>We needed more ways to drive users to content whilst in a browsing phase, taking lead from major platform distributors such as netflix and YouTube we decided we should implement Video Trailers into the UI.</p>
       </Item>
     </CaseWrapper>
@@ -63,22 +64,26 @@ const VideoPreviewCaseStudy = () => (
      <CaseWrapper>
      <Item>
         <h3>What was the solution</h3>
-        <p>Due to the restrictions of the hardware we use such as low CPU and lack of tuners I had to look into solutions that could work within our limitations. I researched HLS streams which are less expensive than mp4's as HLS downloads incrementally rather than having to download a whole mp4 file of which size could be quite large. </p>
+        <p>YouView uses visual carousels within there main UI to help users navigate content, working with UX we quickly identified the carousels as the best place to display the trailers. </p>
+        <p>At YouView we work with set top boxes and displaying two videos (live tv and trailers) at onces proved to be a difficult task due minimal features within the set top box.</p>
+        <p>I quickly identified these issues and worked with Android developers to port our UI to an Android device which could support the feature better.</p>
+        <p>I did some research into video streaming and decided HLS streams were our best option to allow for quick loading, using HLS.js and a third party api for trailer coverage I added trailers to our UI. </p>
+        <p>The third party api had an insufficient amount of trailers and limited our implementation. I sourced a bunch of trailers myself and using ffmpeg converted them from mp4 to HLS, I added the videos to a Dynamo database and built and api using node.js and AWS services to connect and serve the videos based of content type or provider, this allowed us to display a multitude of videos across the UI. </p>
       </Item>
 
       <Item>
-      <StyledImg src='/imgs/case-studies/vp/vp.png'/>
+      <StyledImg style={{marginLeft: '100px'}} src='/imgs/case-studies/vp/vp-disc-1.png'/>
       </Item>
     </CaseWrapper>
 
     <CaseWrapper>
       <Item>
-        <StyledImg src='/imgs/case-studies/vp/vp.png'/>
+        <StyledImg src='/imgs/case-studies/vp/vp-foryou.png'/>
       </Item>
 
       <Item>
         <h3>What was the outcome</h3>
-        <p>I implemented a new area into the UI which allows user to specifically browse category based content and watch trailers in order to make a decision to either watch now or add to a 'watch later' list. I also implement trailers in to the main channel browsing area of the UI to encourage users to select a programme to watch.</p>
+        <p>We now have video trailers across the UI (on Android devices) allowing the content to come to life and help users make a decision, we also have a fully functional trailer API which can be used across the team. We are currently working on implementing live previews which will display live content whilst the user browses.</p>
       </Item>
     </CaseWrapper>
 

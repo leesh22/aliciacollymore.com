@@ -48,37 +48,38 @@ const SoleTraderCaseStudy = () => (
     <BackLink to='/caseStudies'><img src='/imgs/back-arrow.png'/></BackLink>
     <h4>Case Study</h4>
     <h1>MySoleTrader</h1>
-    <p>AngularJs, Javascript, PHP, MySql, CSS, HTML, WordPress</p>
+    <p>AngularJs, Javascript, PHP, SASS, HTML, WordPress</p>
     <CaseWrapper>
       <Item>
-        <StyledImg src='/imgs/case-studies/st/mysoletrader2.jpg'/>
+        <StyledImg src='/imgs/case-studies/st/st-site.png'/>
       </Item>
 
       <Item>
         <h3>What was the problem</h3>
-        <p>SoleTrader.com has a customer base who are not always great with customers and were struggling to update there website often making mistakes and breaking the site. We also had a team in India who update sites, we needed to reduce the amount of developers to reduces costs whist still being able to provide customers with changes if need be.</p>
+        <p>SoleTrader.com has a customer base who are not always great with tech and were struggling to update their website often making mistakes and breaking the site. SoleTrader.com offered free unlimited changes and had a team in India who carried them out, the amount of changes was often overwhelming and the team struggled to keep up, we needed to help facilitate the customers to update there sites on there own.</p>
       </Item>
     </CaseWrapper>
 
      <CaseWrapper>
      <Item>
         <h3>What was the solution</h3>
-        <p>We decided to build a 'fool proof' back-end to allow easy updating of sites, using the WordPress UI we build a interface users could log into and update there site. The back-end was built by the back-end developer while I built out the front end using the then ever so popular Angular 1.4 </p>
+        <p>We decided to build a 'foolproof' user interface to allow easy updating of websites and account information, working closely with our backend developer I developed the front end of user interface using Angular 1.4.</p>
+        <p>Working with the Wordpress API and SugarCRM API we enabled customers to update everything from there website gallery to there account preferences with ease. Using Sass I ensured the platform was fully responsive to allow users to update there website on the go. </p>
       </Item>
 
       <Item>
-      <StyledImg src='/imgs/case-studies/st/mysoletrader2.jpg'/>
+      <StyledImg style={{marginLeft: '100px'}} src='/imgs/case-studies/st/mysoletrader2.jpg'/>
       </Item>
     </CaseWrapper>
 
     <CaseWrapper>
       <Item>
-       <StyledImg src='/imgs/case-studies/st/mysoletrader2.jpg'/>
+       <StyledImg src='/imgs/case-studies/st/mysoletrader.jpg'/>
       </Item>
 
       <Item>
         <h3>What was the outcome</h3>
-        <p>An fresh and funky interface that allowed our customers and staff to updated websites with ease. </p>
+        <p>Customers were able to easily update there website and account information with ease, which reduced the amount of changes our external team had to carry out, overall it was a great success and often praised by customers. </p>
       </Item>
     </CaseWrapper>
 

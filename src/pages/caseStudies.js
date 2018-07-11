@@ -70,7 +70,7 @@ const caseStudiesPage = () => (
 
       <CaseWrapper>
         <CaseItem>
-          <CaseImage src='/imgs/case-studies/help/overview.png'/>
+          <CaseImage src='/imgs/case-studies/vp/vp-foryou.png'/>
         </CaseItem>
 
         <CaseItem>
