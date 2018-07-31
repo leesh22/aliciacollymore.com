@@ -20,7 +20,7 @@ const SubTitle = styled.h2 `
 
 const SecondPage = () => (
   <div>
-    <Header title='A litte bit about me' bgColor='url("/imgs/alicia-dark.png")' subTitle=''/>
+    <Header title='A little bit about me' bgColor='url("/imgs/alicia-dark.png")' subTitle=''/>
     <ContentWrapper>
       <Wrapper>
         <h2>Who I am</h2>

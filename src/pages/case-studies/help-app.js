@@ -49,7 +49,7 @@ const HelpAppCaseStudy = () => (
     <div>
         <h3>Feedback</h3>
         <ItalicPara para='"Alicia analysed the existing help app, reviewing the current implementation and identifying how modern development practices could be applied to improve the app. She worked through multiple interoperability issues to get Typescript, coverage tooling and unit test frameworks working together in harmony, whilst keeping the app light and fast enough to meet performance metrics."'/>
-        <p>Phillp Beal - Tech Lead</p>
+        <p>Phillip Beel - Tech Lead</p>
     </div>
   
     
